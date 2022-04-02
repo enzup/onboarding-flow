@@ -1,0 +1,66 @@
+$placeHolderColor: #a9a9a9;
+$labelColor: rgb(44, 42, 42);
+$prefixBackgroundColor: rgba(176, 196, 222, 0.2);
+
+.input {
+    &-container {
+        align-self: center;
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+    }
+
+    &-label {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        color: $labelColor;
+
+        &-sublabel {
+            margin-left: 4px;
+            color: $placeHolderColor;
+        }
+    }
+
+    &-field {
+        margin-top: 8px;
+        height: 48px;
+        width: 100%;
+        padding: 0 16px;
+        border-radius: 4px;
+        border: 1px solid $placeHolderColor;
+
+        &::placeholder {
+            color: $placeHolderColor;
+        }
+
+        &.prefix {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    &-field-with-prefix {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .prefix-box {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 16px;
+            color: $placeHolderColor;
+            border: 1px solid $placeHolderColor;
+            border-right: 0;
+            background-color: $prefixBackgroundColor;
+            height: 48px;
+            width: fit-content;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+    }
+}

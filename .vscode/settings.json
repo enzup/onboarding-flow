@@ -1,0 +1,5 @@
+{
+  "scssFormatter.printWidth": 160,
+  "html.format.wrapLineLength": 160,
+  "editor.wordWrap": "wordWrapColumn"
+}

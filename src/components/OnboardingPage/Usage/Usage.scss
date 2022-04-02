@@ -1,0 +1,39 @@
+@import "src/styles/common";
+
+.usage {
+    &-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-user-type {
+        width: 188px;
+        border: 1px solid #dcdcdc;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        &-title {
+            font-weight: bold;
+            margin: 8px 0;
+        }
+
+        &-subtitle {
+            color: grey;
+        }
+
+        &.selected {
+            border-color: $themeColor;
+        }
+
+        &-container {
+            display: flex;
+            align-self: center;
+        }
+
+        &:first-child {
+            margin-right: 24px;
+        }
+    }
+}

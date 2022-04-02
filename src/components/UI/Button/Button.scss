@@ -1,0 +1,19 @@
+@import "src/styles/common";
+
+.button {
+    width: 400px;
+    height: 48px;
+    color: white;
+    background-color: $themeColor;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    align-self: center;
+
+    &:disabled {
+        color: black;
+        background-color: white;
+        border: 1px solid grey;
+        cursor: default;
+    }
+}

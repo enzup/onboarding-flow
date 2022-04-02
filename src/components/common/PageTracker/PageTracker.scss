@@ -1,0 +1,51 @@
+@import "src/styles/common";
+
+$primaryColor: #dcdcdc;
+
+.page-tracker {
+    &-container {
+        display: flex;
+        margin: 64px 0;
+    }
+
+    &-box {
+        display: flex;
+        align-items: center;
+
+        &.active {
+            .page-tracker-line {
+                background-color: $themeColor;
+            }
+
+            .page-tracker-number {
+                color: white;
+                &-container {
+                    background-color: $themeColor;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &-number {
+        color: black;
+        top: -1px;
+        position: relative;
+
+        &-container {
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $primaryColor;
+        }
+    }
+
+    &-line {
+        height: 1px;
+        width: 32px;
+        background-color: $primaryColor;
+    }
+}
