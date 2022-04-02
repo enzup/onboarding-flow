@@ -8,9 +8,11 @@ const title = "Welcome! First things first...";
 const subtitle = "You can always change them later.";
 
 const PersonalDetails = (props) => {
-  const [fullName, setFullName] = useState(sessionStorage.getItem("fullName"));
+  const [fullName, setFullName] = useState(
+    sessionStorage.getItem("fullName") || ""
+  );
   const [displayName, setDisplayName] = useState(
-    sessionStorage.getItem("displayName")
+    sessionStorage.getItem("displayName") || ""
   );
 
   const onSetFullName = (event) => {

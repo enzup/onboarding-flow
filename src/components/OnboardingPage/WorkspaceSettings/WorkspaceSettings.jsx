@@ -9,10 +9,10 @@ const subtitle = "You can always create another workspace later.";
 
 const WorkspaceSettings = (props) => {
   const [workspaceName, setWorkspaceName] = useState(
-    sessionStorage.getItem("workspaceName")
+    sessionStorage.getItem("workspaceName") || ""
   );
   const [workspaceUrl, setWorkspaceUrl] = useState(
-    sessionStorage.getItem("workspaceUrl")
+    sessionStorage.getItem("workspaceUrl") || ""
   );
 
   const onSetWorkspaceName = (event) => {

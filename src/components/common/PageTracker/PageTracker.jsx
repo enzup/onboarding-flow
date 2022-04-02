@@ -7,6 +7,7 @@ const PageTracker = (props) => {
     <div className="page-tracker-container">
       {pages.map((page, i) => (
         <div
+          key={page}
           className={
             "page-tracker-box" + (props.currentPage > i ? " active" : "")
           }
