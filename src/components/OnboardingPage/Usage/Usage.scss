@@ -36,4 +36,11 @@
             margin-right: 24px;
         }
     }
+
+    @media only screen and (max-width: 600px) {
+        &-user-type-container {
+            max-width: calc(100% - 48px);
+            justify-content: center;
+        }
+    }
 }

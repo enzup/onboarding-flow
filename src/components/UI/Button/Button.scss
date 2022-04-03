@@ -16,4 +16,8 @@
         border: 1px solid grey;
         cursor: default;
     }
+
+    @media only screen and (max-width: 600px) {
+        max-width: calc(100% - 48px);
+    }
 }

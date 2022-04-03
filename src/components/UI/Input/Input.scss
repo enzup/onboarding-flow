@@ -63,4 +63,10 @@ $prefixBackgroundColor: rgba(176, 196, 222, 0.2);
             border-bottom-left-radius: 4px;
         }
     }
+
+    @media only screen and (max-width: 600px) {
+        &-container {
+            max-width: calc(100% - 48px);
+        }
+    }
 }

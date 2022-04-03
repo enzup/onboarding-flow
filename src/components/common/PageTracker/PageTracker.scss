@@ -48,4 +48,15 @@ $primaryColor: #dcdcdc;
         width: 32px;
         background-color: $primaryColor;
     }
+
+    @media only screen and (max-width: 600px) {
+        &-number-container {
+            height: 40px;
+            width: 40px;
+        }
+
+        &-line {
+            width: 24px;
+        }
+    }
 }
