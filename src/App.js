@@ -1,11 +1,13 @@
 import "./App.scss";
 import OnboardingPage from "./components/OnboardingPage/OnboardingPage";
+import LabelContext from "./context/LabelContext";
+import { labels } from "./context/labels";
 
 function App() {
   return (
-    <div className="App">
+    <LabelContext.Provider value={labels}>
       <OnboardingPage></OnboardingPage>
-    </div>
+    </LabelContext.Provider>
   );
 }
 
